@@ -1,42 +1,57 @@
 import React, { useState } from "react";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+
 import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
 import ListingCard from "./components/ListingCard";
 import Footer from "./components/Footer";
 
 import iris from "./assets/iris.png"
+import tipaza from "./assets/tipaza.png"
+import vllaBordjElKiffan from "./assets/vllaBordjElKiffan.png"
+import studiohydra from "./assets/studiohydra.png"
+
+import ProjetsPage from "./components/ProjetsPage"
+import AboutPage from "./components/AboutPage"
+import ContactPage from "./components/ContactPage"
+
+console.log("ProjetsPage =", ProjetsPage);
+console.log("AboutPage =", AboutPage);
+console.log("ContactPage =", ContactPage);
+
+
 
 
 const sampleListings = [
   { id: 1, title: "Résidence Les Iris - Appartement T3", location: "Alger Centre", price: "17 500 000 DA", img: iris, beds: 2, area: "95 m²" },
-  { id: 2, title: "Villas du Parc - Villa familiale", location: "Bordj El Kiffan", price: "42 000 000 DA", img: "https://picsum.photos/seed/p2/800/600", beds: 4, area: "220 m²" },
-  { id: 3, title: "Studio Compact", location: "Hydra", price: "8 500 000 DA", img: "https://picsum.photos/seed/p3/800/600", beds: 1, area: "35 m²" },
-  { id: 4, title: "Appartement Vue Mer", location: "Tipaza", price: "25 000 000 DA", img: "https://picsum.photos/seed/p4/800/600", beds: 3, area: "130 m²" },
+  { id: 2, title: "Villas du Parc - Villa familiale", location: "Bordj El Kiffan", price: "42 000 000 DA", img: vllaBordjElKiffan, beds: 4, area: "220 m²" },
+  { id: 3, title: "Studio Compact", location: "Hydra", price: "8 500 000 DA", img: studiohydra, beds: 1, area: "35 m²" },
+  { id: 4, title: "Appartement Vue Mer", location: "Tipaza", price: "25 000 000 DA", img: tipaza, beds: 3, area: "130 m²" },
 ];
 
 function parsePrice(priceStr) {
   return Number(priceStr.replace(/\D/g, ""));
 }
 
-export default function App() {
+function HomePage() {
   const [query, setQuery] = useState("");
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(999999999);
   const [selected, setSelected] = useState(null);
 
-  const filtered = sampleListings.filter((item) => {
+  const filtered = sampleListings.filter((item) => {  
     const matchesQuery =
       query === "" ||
       item.title.toLowerCase().includes(query.toLowerCase()) ||
       item.location.toLowerCase().includes(query.toLowerCase());
+      
     const price = parsePrice(item.price);
     const inRange = price >= minPrice && price <= maxPrice;
     return matchesQuery && inRange;
   });
 
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800">
-      <Header />
+    <>
 
       <section className="max-w-6xl mx-auto px-4 py-8">
         <SearchBar query={query} setQuery={setQuery} setMinPrice={setMinPrice} setMaxPrice={setMaxPrice} />
@@ -56,7 +71,7 @@ export default function App() {
         </div>
       </main>
 
-      <Footer />
+      
 
       {/* Simple modal preview */}
       {selected && (
@@ -79,6 +94,29 @@ export default function App() {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
+}
+export default function App(){
+  return(
+
+      <Router>
+        <div className="min-h-screen bg-gray-50 text-gray-800">
+          <Header />
+
+          <Routes>
+            <Route path="/" element={<HomePage/>}/>
+            <Route path="/projets" element={<ProjetsPage/>} />
+            <Route path="/a-propos" element={<AboutPage/>} />
+            <Route path="/contact" element={<ContactPage/>}/>
+
+          </Routes>
+
+           <Footer />    
+      
+        </div>
+      </Router>
+    
+  )
+  
 }

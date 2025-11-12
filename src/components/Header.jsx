@@ -1,26 +1,28 @@
-import React from "react";
+import React from 'react'
+import {Link} from "react-router-dom"
 
-export default function Header() {
+const Header = () => {
   return (
-    <header className="bg-white shadow-sm">
-      <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-3">
+    <header>
+    <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+        <Link to="/" className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-md bg-gradient-to-r from-blue-600 to-teal-400 flex items-center justify-center text-white font-bold">
-            PI
+            MI
           </div>
           <div>
-            <h1 className="font-semibold">Promo Immobilière</h1>
+            <h1 className="font-semibold">Macelia Immobilier</h1>
             <p className="text-xs text-gray-500">Offres sélectionnées</p>
           </div>
-        </div>
-
-        <nav className="hidden sm:flex gap-4 items-center">
-          <a className="text-sm hover:text-blue-600" href="#">Projets</a>
-          <a className="text-sm hover:text-blue-600" href="#">À propos</a>
-          <a className="text-sm hover:text-blue-600" href="#">Contact</a>
-          <button className="ml-2 px-3 py-1 rounded-md bg-blue-600 text-white text-sm">Se connecter</button>
-        </nav>
-      </div>
+        </Link>
+    <nav className="hidden sm:flex gap-4 items-center">
+        <Link to ="/projets" className='text-sm hover:text-blue-600' >Projets</Link>
+        <Link to ="/a-propos" className='text-sm hover:text-blue-600' >À propos</Link>
+        <Link to ="/contact" className='text-sm hover:text-blue-600' >Contact</Link>
+    </nav>
+    </div>
     </header>
+    
   );
 }
+
+export default Header
