@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import {useNavigate} from "react-router-dom";
 
 import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
@@ -34,6 +35,7 @@ function parsePrice(priceStr) {
 }
 
 function HomePage() {
+  const navigate=useNavigate();
   const [query, setQuery] = useState("");
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(999999999);
@@ -51,6 +53,7 @@ function HomePage() {
   });
 
   return (
+    
     <>
 
       <section className="max-w-6xl mx-auto px-4 py-8">
@@ -88,7 +91,12 @@ function HomePage() {
 
               <div className="mt-6 flex gap-3">
                 <button onClick={() => setSelected(null)} className="px-4 py-2 border rounded-md">Fermer</button>
-                <button className="px-4 py-2 bg-blue-600 text-white rounded-md">Contact</button>
+                <button 
+                 onClick={() => {
+                  setSelected(null);
+                  navigate("/contact");
+                }}
+                className="px-4 py-2 bg-blue-600 text-white rounded-md">Contact</button>
               </div>
             </div>
           </div>
@@ -98,6 +106,7 @@ function HomePage() {
   );
 }
 export default function App(){
+  
   return(
 
       <Router>

@@ -15,7 +15,7 @@ export default function ListingCard({ item, onView }) {
 
         <div className="mt-4 flex gap-2">
           <button onClick={() => onView(item)} className="flex-1 px-3 py-2 rounded-md border border-blue-600 text-blue-600 hover:bg-blue-50">Voir</button>
-          <button className="px-3 py-2 rounded-md bg-blue-600 text-white">Contact</button>
+          
         </div>
       </div>
     </article>

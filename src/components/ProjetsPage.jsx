@@ -1,11 +1,14 @@
 
 import React, { useState } from "react"
 import ListingCard from "./ListingCard"
+import { useNavigate } from "react-router-dom"; 
 
 import Bahia from "../assets/Bahia.jpg"
 import Horizon from "../assets/Horizon.jpg"
 import Pins from "../assets/Pins.jpg"
 import Amara from "../assets/Amara.jpeg"
+
+ 
 
 const projetsEnCours = [
   {
@@ -16,6 +19,10 @@ const projetsEnCours = [
     img: Bahia,
     area: "120 m²",
     price: "À partir de 19 000 000 DA",
+    bedrooms: 3,
+    bathrooms: 2,
+    garage: 1,
+    year: 2025
   },
   {
     id: 2,
@@ -61,6 +68,7 @@ const projetsEnCours = [
 
 export default function ProjetsPage() {
   const [selected, setSelected] = useState(null);
+  const navigate =useNavigate();
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
@@ -85,9 +93,9 @@ export default function ProjetsPage() {
         <p className="text-sm text-gray-500">{project.location}</p>
         <p className="mt-2 text-gray-600">{project.description}</p>
         <button
-  onClick={() => setSelected(project)}
-  className="mt-4 bg-gray-900 text-white px-5 py-2 rounded-lg hover:bg-gray-700"
->
+              onClick={() => setSelected(project)}
+              className="mt-4 bg-gray-900 text-white px-5 py-2 rounded-lg hover:bg-gray-700"
+        >
   Plus d’infos
 </button>
 
@@ -119,7 +127,15 @@ export default function ProjetsPage() {
 
         <div className="mt-6 flex gap-3">
           <button onClick={() => setSelected(null)} className="px-4 py-2 border rounded-md">Fermer</button>
-          <button className="px-4 py-2 bg-blue-600 text-white rounded-md">Contact</button>
+          <button 
+          onClick={()=>{
+            setSelected(null)
+            navigate("/contact");
+          }}
+          className="px-4 py-2 bg-blue-600 text-white rounded-md"
+          >
+            Contact
+          </button>
         </div>
       </div>
     </div>
