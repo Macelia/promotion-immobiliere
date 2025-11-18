@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# 🏢 Promotion Immobilière
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## ✨ Description du Projet
 
-## Available Scripts
+Ceci est un projet d'application web de type **vitrine (landing page)** ou **catalogue** développé pour une promotion immobilière. Il a pour objectif de présenter les biens disponibles, les projets futurs et d'offrir une expérience utilisateur fluide et moderne.
 
-In the project directory, you can run:
+L'interface utilisateur est construite avec **React** et stylisée avec l'utilitaire **Tailwind CSS**. Elle intègre des animations sophistiquées grâce à la librairie **Framer Motion** pour une expérience dynamique.
 
-### `npm start`
+## 🚀 Technologies Utilisées
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Ce projet est construit avec la pile technologique suivante :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* **Front-end** : [React](https://reactjs.org/) (Version 19.x)
+* **Styling** : [Tailwind CSS](https://tailwindcss.com/) pour un développement rapide et modulaire.
+* **Animations** : [Framer Motion](https://www.framer.com/motion/) pour des transitions et des effets fluides.
+* **Navigation** : [React Router DOM](https://reactrouter.com/web/guides/quick-start) pour la gestion des routes.
+* **Icônes** : [Lucide React](https://lucide.dev/)
+* **Bootstrapping** : Créé avec [Create React App](https://github.com/facebook/create-react-app).
 
-### `npm test`
+## 🔑 Fonctionnalités Clés (Exemples)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+*(À adapter selon les fonctionnalités réelles de votre application)*
 
-### `npm run build`
+* **Interface Réactive :** Design adapté aux ordinateurs de bureau, tablettes et mobiles.
+* **Navigation Fluide :** Utilisation de `react-router-dom` pour le routage entre les pages (Accueil, Projets, Contact, etc.).
+* **Animations Modernes :** Effets de transition et scroll animés grâce à Framer Motion.
+* **Catalogue de Biens :** Affichage potentiellement filtrable et détaillé des promotions immobilières.
+* **Formulaire de Contact :** Pour permettre aux utilisateurs de prendre contact rapidement.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ⚙️ Installation et Démarrage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Suivez les étapes ci-dessous pour lancer le projet en local.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Pré-requis
 
-### `npm run eject`
+* Node.js (LTS recommandé)
+* npm (normalement inclus avec Node.js)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Étapes
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1.  **Cloner le dépôt :**
+    ```bash
+    git clone [VOTRE_URL_DU_REPO]
+    cd promotion-immobiliere
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2.  **Installer les dépendances :**
+    ```bash
+    npm install
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3.  **Démarrer l'application en mode développement :**
+    ```bash
+    npm start
+    ```
+    L'application sera accessible dans votre navigateur à l'adresse suivante : [http://localhost:3000](http://localhost:3000)
+    Le navigateur se rechargera automatiquement si vous modifiez les fichiers source.
 
-## Learn More
+## 📦 Scripts Disponibles
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Dans le répertoire du projet, vous pouvez exécuter :
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+| Commande | Description |
+| :--- | :--- |
+| `npm start` | Lance l'application en mode développement. |
+| `npm run build` | Construit l'application pour la production dans le dossier `build`. |
+| `npm test` | Lance le test runner en mode interactif. |
+| `npm run eject` | Retire la dépendance de build unique (opération irréversible !). |
 
-### Code Splitting
+## 🤝 Contribution
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Si vous souhaitez contribuer à ce projet, veuillez suivre ces étapes :
 
-### Analyzing the Bundle Size
+1.  Forkez le projet.
+2.  Créez votre branche de fonctionnalité (`git checkout -b feature/NouvelleFonctionnalite`).
+3.  Commitez vos modifications (`git commit -m 'Ajout d'une nouvelle fonctionnalité'`).
+4.  Poussez vers la branche (`git push origin feature/NouvelleFonctionnalite`).
+5.  Ouvrez une **Pull Request**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📄 Licence
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ce projet est sous licence **[À Préciser : MIT, Apache, etc.]**.
