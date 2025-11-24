@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/promotion-immobiliere/static/css/main.1632b2a9.css",
+    "main.js": "/promotion-immobiliere/static/js/main.8637417d.js",
+    "static/media/tipaza.png": "/promotion-immobiliere/static/media/tipaza.ac903b6deac9ffd9bc93.png",
+    "static/media/vllaBordjElKiffan.png": "/promotion-immobiliere/static/media/vllaBordjElKiffan.46eefec33c10f00626b9.png",
+    "static/media/studiohydra.png": "/promotion-immobiliere/static/media/studiohydra.559edcbdf90a5205de3b.png",
+    "static/media/Sedda.png": "/promotion-immobiliere/static/media/Sedda.368c8ebf0cc2c8b2c28b.png",
+    "static/media/Sahra.png": "/promotion-immobiliere/static/media/Sahra.2ee7717cb7a8d5cdbac1.png",
+    "static/media/iris.png": "/promotion-immobiliere/static/media/iris.410e46bf0ba11a73e079.png",
+    "static/media/Ali.png": "/promotion-immobiliere/static/media/Ali.0fb5ac7cf0e72d03345b.png",
+    "static/media/Macelia.png": "/promotion-immobiliere/static/media/Macelia.1112f693bc796e8e17a0.png",
+    "static/media/Samir.png": "/promotion-immobiliere/static/media/Samir.8a7a69e061be8d05c810.png",
+    "static/media/Pins.jpg": "/promotion-immobiliere/static/media/Pins.1c694f483cabf585e599.jpg",
+    "static/media/Horizon.jpg": "/promotion-immobiliere/static/media/Horizon.d6b41ab4b13a876058f5.jpg",
+    "static/media/Bahia.jpg": "/promotion-immobiliere/static/media/Bahia.56f9ec0ff180e48bd6c2.jpg",
+    "index.html": "/promotion-immobiliere/index.html",
+    "main.1632b2a9.css.map": "/promotion-immobiliere/static/css/main.1632b2a9.css.map",
+    "main.8637417d.js.map": "/promotion-immobiliere/static/js/main.8637417d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1632b2a9.css",
+    "static/js/main.8637417d.js"
+  ]
+}
