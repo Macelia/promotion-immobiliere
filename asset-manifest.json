@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/promotion-immobiliere/static/css/main.1632b2a9.css",
-    "main.js": "/promotion-immobiliere/static/js/main.8637417d.js",
+    "main.js": "/promotion-immobiliere/static/js/main.22357031.js",
     "static/media/tipaza.png": "/promotion-immobiliere/static/media/tipaza.ac903b6deac9ffd9bc93.png",
     "static/media/vllaBordjElKiffan.png": "/promotion-immobiliere/static/media/vllaBordjElKiffan.46eefec33c10f00626b9.png",
     "static/media/studiohydra.png": "/promotion-immobiliere/static/media/studiohydra.559edcbdf90a5205de3b.png",
@@ -16,10 +16,10 @@
     "static/media/Bahia.jpg": "/promotion-immobiliere/static/media/Bahia.56f9ec0ff180e48bd6c2.jpg",
     "index.html": "/promotion-immobiliere/index.html",
     "main.1632b2a9.css.map": "/promotion-immobiliere/static/css/main.1632b2a9.css.map",
-    "main.8637417d.js.map": "/promotion-immobiliere/static/js/main.8637417d.js.map"
+    "main.22357031.js.map": "/promotion-immobiliere/static/js/main.22357031.js.map"
   },
   "entrypoints": [
     "static/css/main.1632b2a9.css",
-    "static/js/main.8637417d.js"
+    "static/js/main.22357031.js"
   ]
 }
