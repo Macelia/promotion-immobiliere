@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {useNavigate} from "react-router-dom";
 
 import Header from "./components/Header";
@@ -109,7 +109,7 @@ export default function App(){
   
   return(
 
-      <Router>
+      <BrowserRouter basename="/promotion-immobiliere">
         <div className="min-h-screen bg-gray-50 text-gray-800">
           <Header />
 
@@ -124,7 +124,7 @@ export default function App(){
            <Footer />    
       
         </div>
-      </Router>
+      </BrowserRouter>
     
   )
   
